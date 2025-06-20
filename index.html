@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal T | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffffdd;
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #0078d4;
+    }
+    header {
+      background: linear-gradient(to right, #1f3b4d, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #2c5364;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      background: #2c5364;
+      color: white;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #0078d4;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="profile.png" alt="Kunal T">
+    <h1>Kunal T</h1>
+    <p>Data Scientist | Developer | Portfolio Architect</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width: 800px; margin: auto;">
+      I'm passionate about building data-driven products and clean, impactful portfolio websites.
+      With a strong foundation in analytics and modern UI/UX, I craft experiences that communicate value.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Smart Analytics Dashboard</h3>
+        <p>Interactive KPI dashboards using Power BI, Excel and DAX. Real-time insights for business metrics.</p>
+      </div>
+      <div class="card">
+        <h3>AI Chatbot Assistant</h3>
+        <p>Conversational chatbot built with NLP and Python. Supports intent classification and dynamic routing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">Google Data Analytics – 2024</div>
+      <div class="card">AWS Cloud Practitioner – 2023</div>
+      <div class="card">Coursera Machine Learning – 2022</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid gallery">
+      <img src="gallery1.jpg" alt="Gallery 1" />
+      <img src="gallery2.jpg" alt="Gallery 2" />
+      <img src="gallery3.jpg" alt="Gallery 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+      Let's connect!<br />
+      <a href="mailto:youremail@example.com" class="button">Email Me</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Kunal T • Designed with clarity, data & purpose
+  </footer>
+
+</body>
+</html>
